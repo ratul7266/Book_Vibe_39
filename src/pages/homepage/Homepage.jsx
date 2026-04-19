@@ -1,9 +1,12 @@
 import React from 'react';
+import Banner from '../../components/shared/navbar/homepage/Banner';
+import AllBooks from '../../components/shared/navbar/homepage/AllBooks';
 
 const Homepage = () => {
     return (
         <div>
-            homepage
+            <Banner></Banner>
+            <AllBooks></AllBooks>
         </div>
     );
 };
