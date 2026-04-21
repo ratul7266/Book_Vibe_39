@@ -1,12 +1,12 @@
 import React from "react";
-import { useContext } from "react";
 import { BookContext } from "../../../context/BookContext";
 import "react-tabs/style/react-tabs.css";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import ListedReadList from "../../../components/listedBooks/ListedReadList";
+import ListtedWishList from "../../../components/listedBooks/ListedWishList";
+import ListedWishList from "../../../components/listedBooks/ListedWishList";
 
 const Books = () => {
-  const { storedBooks, wishList } = useContext(BookContext);
-  console.log(storedBooks);
   return (
     <div className="mx-auto container">
       <Tabs>
@@ -16,10 +16,10 @@ const Books = () => {
         </TabList>
 
         <TabPanel>
-          <h2>read list: {storedBooks.length}</h2>
+          <ListedReadList></ListedReadList>
         </TabPanel>
         <TabPanel>
-          <h2>wish list: {wishList.length}</h2>
+          <ListedWishList></ListedWishList>
         </TabPanel>
       </Tabs>
     </div>

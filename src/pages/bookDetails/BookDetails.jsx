@@ -21,11 +21,11 @@ const BookDetails = () => {
             className="rounded-xl object-contain"
           />
         </figure>
-        <div className="card-body lg:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full p-6 flex flex-col gap-0">
           <h2 className="card-title text-2xl font-bold mb-4">
             {expectedBook.bookName}
           </h2>
-          <p className="font-semibold text-lg mb-4">
+          <p className="font-semibold text-lg mb-2">
             By : {expectedBook.author}
           </p>
           <hr className="text-gray-400" />
