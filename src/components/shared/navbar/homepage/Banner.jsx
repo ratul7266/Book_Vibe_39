@@ -9,7 +9,7 @@ const Banner = () => {
             <img src={BannerBookImg} alt="" />
           <div>
             <h1 className="text-6xl font-bold">Books to freshen up <br /> your bookshelf</h1>
-            
+           
             <button className="btn bg-green-600 text-white font-bold mt-6">View The List</button>
           </div>
         </div>
